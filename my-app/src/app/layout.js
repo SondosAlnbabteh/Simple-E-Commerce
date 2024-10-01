@@ -6,8 +6,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {/* Header Component */}
-        <header className="bg-gray-800 text-white p-4">
-          <nav className="container mx-auto flex justify-between items-center">
+        <header className="p-4 text-white bg-gray-800">
+          <nav className="container flex items-center justify-between mx-auto">
             <div className="text-2xl font-bold">My Website</div>
             <ul className="flex space-x-4">
               <li>
@@ -25,13 +25,38 @@ export default function RootLayout({ children }) {
                   <p className="hover:text-gray-400">About Us</p>
                 </Link>
               </li>
+              <li>
+                <Link href="/data">
+                  <p className="hover:text-gray-400">Data</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/productsIncremental">
+                  <p className="hover:text-gray-400">Products Incremental</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/productsServer">
+                  <p className="hover:text-gray-400">Products Server</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/productsStatic">
+                  <p className="hover:text-gray-400">Products Static</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/cart">
+                  <p className="hover:text-gray-400"> cart</p>
+                </Link>
+              </li>
              
             </ul>
           </nav>
         </header>
 
         {/* Main content */}
-        <main className="container mx-auto p-4">{children}</main>
+        <main className="container p-4 mx-auto">{children}</main>
       </body>
     </html>
   );
