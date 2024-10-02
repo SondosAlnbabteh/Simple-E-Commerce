@@ -10,6 +10,10 @@ export default function RootLayout({ children }) {
           <nav className="container flex items-center justify-between mx-auto">
             <div className="text-2xl font-bold">My Website</div>
             <ul className="flex space-x-4">
+
+              <div className="flex justify-center gap-3 mr-32">
+
+                
               <li>
                 <Link href="/">
                   <p className="hover:text-gray-400">Home</p>
@@ -20,7 +24,20 @@ export default function RootLayout({ children }) {
                   <p className="hover:text-gray-400">Products</p>
                 </Link>
               </li>
+              </div>
+
+              
               <li>
+                <Link href="/signup">
+                  <p className="hover:text-gray-400">signup</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/login">
+                  <p className="hover:text-gray-400">Login</p>
+                </Link>
+              </li>
+              {/* <li>
                 <Link href="/about">
                   <p className="hover:text-gray-400">About Us</p>
                 </Link>
@@ -49,7 +66,7 @@ export default function RootLayout({ children }) {
                 <Link href="/cart">
                   <p className="hover:text-gray-400"> cart</p>
                 </Link>
-              </li>
+              </li> */}
              
             </ul>
           </nav>
